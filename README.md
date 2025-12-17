@@ -4,7 +4,7 @@
 This project explores how security-relevant identity and privilege events are logged in modern AWS environments using CloudTrail and IAM Identity Center.
 
 ## Phase 0 – Audit Logging Setup
-- Enabled CloudTrail management events
+- Enabled CloudTrail management events, read + write 
 - Validated end-to-end delivery to S3
 - Confirmed logging of control plane activity
 
@@ -12,7 +12,7 @@ This project explores how security-relevant identity and privilege events are lo
 - Enabled IAM Identity Center
 - Created test user, group, and permission set
 - Assigned AdministratorAccess to an AWS account
-- Identified `CreateAccountAssignment` as the key privilege escalation event
+- Identified `CreateAccountAssignment` as the key privilege escalation event in the CloudTrail event history
 
 ## Next Steps
 - Parse CloudTrail JSON logs using Python
