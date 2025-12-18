@@ -2,4 +2,5 @@
 - Create a remediation bot to remove permissions from a user that has escalated privileges
   - create a lambda function(acts as the bot) 
   - Create a test dummy(don't give yourself yourself escalted permissions or the bot could remove you) with AdministrativeAccess
-  - Lambda function may have basic execution permissions, go to the configuration tab then under role name click the blue link, then add IAMFullAccess so it can remove the adminaccess from the dummy
+  - Lambda function may have basic execution permissions, go to the Configuration tab then Permissions then under role name click the blue link, then add IAMFullAccess so it can remove the adminaccess from the dummy
+  
